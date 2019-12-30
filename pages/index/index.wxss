@@ -1,0 +1,68 @@
+/**index.wxss**/
+.padding-top-sl{
+   padding-top:140rpx;
+}
+
+.index-icon image {
+  width: 120rpx;
+  height: 120rpx;
+  display: inline-block;
+}
+
+.banner-index{
+  width: 100%;
+  padding: 0 30rpx;
+  height: 220rpx;
+}
+
+.title-header{
+  display: flex;
+  height: 120rpx;
+  font-size: 40rpx;
+  align-items: center;
+  justify-content: center;
+  /* padding: 40rpx 0 0 0; */
+  font-weight: bold;
+  background-image: url(https://cdn.nlark.com/yuque/0/2019/png/280373/1567400719411-assets/web-upload/96c5aed9-e281-4638-abf0-1c1c14d64b30.png);
+  background-size: cover;
+}
+
+.margin-bottom-index{
+  margin-bottom: 110rpx
+}
+
+.search-index{
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.product-title{
+  /* margin-top: -20rpx; */
+}
+.product-price{
+  margin-top:10rpx;
+  margin-left: -5rpx;
+}
+
+.products-box{
+  /* margin:0 20rpx 20rpx 20rpx; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.product-border{
+  border: 1rpx solid rgba(0,0,0,0.05)
+}
+
+.index-title{
+  -webkit-line-clamp:1; 
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  text-overflow: ellipsis;
+  overflow:hidden; 
+}
+
+.delete-price{
+  padding-left: 10rpx;
+  text-decoration:line-through
+}

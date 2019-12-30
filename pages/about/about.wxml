@@ -1,0 +1,35 @@
+<!--pages/about/about.wxml-->
+<!-- <view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-orange" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action padding-right-xl' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back text-bold'></text>
+    </navigator>
+    <view class='content text-bold' style='top:{{StatusBar}}px;'>关于我们</view>
+  </view>
+</view> -->
+
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed text-white bg-about" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action border-custom' open-type="navigateBack" delta="1" hover-class="none" style='width:{{Custom.width}}px;height:{{Custom.height}}px;margin-left:calc(750rpx - {{Custom.right}}px)'>
+      <text class='icon-back'></text>
+      <text class='icon-homefill'></text>
+    </navigator>
+  </view>
+</view>
+
+<view  style="margin-top:-{{CustomBar}}px;">
+<view  class="detail-imgs">
+    <block>
+
+  <image src='https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1569731440792-assets/web-upload/9351ba13-5ea4-4f58-a734-87c317394097.jpeg' mode='widthFix' class='tn-bg-cart'></image>
+
+                        </block>
+
+                </view>
+</view> 
+
+
+<button class='' open-type="contact">
+  <image src='../../images/kefu.png' class='share-img png round shadow-lg bg-white' mode='aspectFit'>
+  </image>
+</button>

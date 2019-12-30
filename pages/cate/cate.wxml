@@ -1,0 +1,155 @@
+<!--pages/cate/cate.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <scroll-view scroll-x class="bg-white nav shadow fixed" scroll-with-animation scroll-left="{{scrollLeft}}" style="padding-top:{{CustomBar + 15}}px;">
+    <view class="cu-item text-lg {{index==TabCur?' text-black cur text-bold text-xl':''}}" wx:for="{{tabNav}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+      {{item}}
+    </view>
+  </scroll-view>
+  <view class="cu-bar fixed bg-white text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <!-- background-image:url(https://cdn.nlark.com/yuque/0/2019/png/280373/1567328447930-assets/web-upload/ccad0e99-2e9b-405b-95f2-5dce740fd570.png); -->
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class="text-xxl text-black">案例</text> 
+    </navigator>
+  </view>
+  
+</view>
+
+
+
+
+<view class="" style="padding-top:{{CustomBar}}px;" wx:if="{{TabCur==0}}">
+  <view  class="" wx:for="{{2}}" wx:key>
+    <view class="cu-card">
+        <view bindtap="navDetail" class="cu-item bg-img shadow-blur" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574736532062-assets/web-upload/5dc61973-518a-48af-ba5d-68d6eeee5c4a.jpeg)">
+            <view class="cardTitle bg-shadeBottom">
+            <text class="name-title-a">择音APP！</text>
+            </view>
+        </view>
+        <view bindtap="navDetail" class="cu-item bg-img shadow-blur" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574736532613-assets/web-upload/a9d7821d-7bc4-4d26-915d-5a1bd0ef340a.jpeg)">
+            <view class="cardTitle bg-shadeBottom">
+            <text class="name-title-a">我会叫他们好受的！</text>
+            </view>
+        </view>
+        <view bindtap="navDetail" class="cu-item bg-img shadow-blur" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574736532111-assets/web-upload/e80331b5-3172-4c01-930d-0077f2198835.jpeg)">
+            <view class="cardTitle bg-shadeBottom">
+            <text class="name-title-a">我的能量，无穷无尽。</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- <view class="content">
+      <image class="product-border" src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568101679032-assets/web-upload/ee18e6f9-6735-4cf1-a628-f2b4234dc1dc.jpeg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class='text-content product-title'>
+          <view class='text-black text-xl'>这是一款很厉害的产品</view>
+          <view class="cu-list menu">
+            <view class="cu-item" style="padding-left:0">
+              <view class='action '>
+                <view class="cu-tag round bg-orange light">课程</view>
+                <view class="cu-tag round bg-olive light">设计</view>
+                <view class="cu-tag round bg-blue light">界面</view>
+              </view>
+            </view>
+          </view>
+          <view class='text-gray text-lg'>这是一款很厉害的产品</view>
+        </view>
+        
+        <view>
+          <view class='price price-product text-title text-lg text-red'>￥233.22</view>
+          <view class='price delete-price text-sm text-gray'>￥255.52</view>
+        </view>
+      </view>
+    </view> -->
+
+
+  </view>
+</view>
+
+<view class="cu-card article no-card padding-top-sm" style="padding-top:{{CustomBar}}px;padding-bottom:{{CustomBar}}px;" wx:if="{{TabCur==1}}">
+  <view  class="cu-item">
+    
+<view class="text-center text-xxl text-black ">
+        <view class="">
+          <image class="" mode="aspectFit" src="../../images/product.png">
+          </image>
+        </view> 
+        暂无案例
+      </view>
+
+    <!-- <view class="content">
+      <image class="product-border" src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568100394340-assets/web-upload/792c999f-bf08-41d5-a33b-21fc5bb263a2.jpeg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class='text-content product-title'>
+          <view class='text-black'>这是一款很厉害的产品这是一款很厉害的产品</view>
+          <view class="cu-list menu">
+            <view class="cu-item" style="padding-left:0">
+              <view class='action'>
+                <view class="cu-tag round bg-orange light">课程</view>
+                <view class="cu-tag round bg-olive light">设计</view>
+                <view class="cu-tag round bg-blue light">界面</view>
+              </view>
+            </view>
+          </view>
+          <view class='text-gray text-df'>这是一款很厉害的产品</view>
+        </view>
+        
+        <view>
+          <view class='price price-product text-title text-lg text-red'>￥233.22</view>
+          <view class='price delete-price text-sm text-gray'>￥255.52</view>
+        </view>
+      </view>
+    </view> -->
+
+
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+<view class='cu-tabbar-height'></view>
+
+
+<!-- <view class='foot'>
+  <view class="cu-bar tabbar bg-white">
+    <navigator url="../index/index" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/index1.png'></image>
+        </view>
+        <view class='text-shop-no'>首页</view>
+      </view>
+    </navigator>
+    <navigator url="../cate/cate" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/cate2.png'></image>
+        </view>
+        <view class='text-shop-active'>分类</view>
+      </view>
+    </navigator>
+    <navigator url="../cart/cart" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/cart1.png'></image>
+          <view class='cu-tag badge'></view>
+        </view>
+        <view class='text-shop-no'>购物车</view>
+      </view>
+    </navigator>
+    <navigator url="../my/my" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/my1.png'></image>
+        </view>
+        <view class='text-shop-no'>我的</view>
+      </view>
+    </navigator>
+  </view>
+</view> -->

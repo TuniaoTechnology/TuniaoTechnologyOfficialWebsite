@@ -1,0 +1,45 @@
+/* pages/orderlist/orderlist.wxss */
+.order-title{
+    font-size: 36rpx;
+   color: #333333;
+   font-weight: 600;
+   display: -webkit-box;
+    line-height: 40rpx;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    margin: 0 10rpx;
+}
+.order-number{
+  font-size: 32rpx;
+   color: #333333;
+   /* font-weight: 600; */
+   display: -webkit-box;
+    line-height: 40rpx;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    margin: 15rpx 10rpx;
+}
+.order-time{
+  font-size: 32rpx;
+  margin-right:10rpx;
+  line-height: 50rpx
+}
+.order-money{
+  font-size: 34rpx;
+   /* color: #ff7500; */
+   font-weight: 600;
+   display: -webkit-box;
+    line-height: 40rpx;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    margin: 10rpx 10rpx 0 0;
+}

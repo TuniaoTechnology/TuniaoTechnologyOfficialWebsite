@@ -1,0 +1,61 @@
+<!-- <view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-orange" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action padding-right-xl' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back text-bold'></text>
+    </navigator>
+    <view class='content text-bold' style='top:{{StatusBar}}px;'>关于我们</view>
+  </view>
+</view> -->
+
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed text-white bg-about" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action border-custom' open-type="navigateBack" delta="1" hover-class="none" style='width:{{Custom.width}}px;height:{{Custom.height}}px;margin-left:calc(750rpx - {{Custom.right}}px)'>
+      <text class='icon-back'></text>
+      <text class='icon-homefill'></text>
+    </navigator>
+  </view>
+</view>
+
+<view  style="margin-top:-{{CustomBar}}px;">
+<view  class="detail-imgs">
+    <block>
+
+  <image src='https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574834204455-assets/web-upload/403086eb-260d-415a-b346-2ab14f3b6989.jpeg' mode='widthFix' class='tn-bg-cart'></image>
+
+                    <!-- <image src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568188760633-assets/web-upload/b565338b-b961-498d-aebd-4201594bd156.jpeg" mode="widthFix"></image>
+                    <image src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568188761260-assets/web-upload/ab656081-eaa2-4841-b6bd-93fb23148e15.jpeg" mode="widthFix"></image> -->
+                        </block>
+<view class="text-white text-center">
+                    图鸟
+                </view>
+
+                </view>
+</view> 
+
+
+
+
+<view class="cu-bar bg-white tabbar shop shadow edit-fixed">
+    <!-- <button class="action text-gray" open-type='contact'>
+        <view class='icon-community text-purple'>
+        </view>
+        反馈
+    </button> -->
+    <button class="action text-gray text-shadow">
+        <view class='icon-command text-gray'>
+        </view>
+    </button>
+    <view class="action text-gray text-shadow">
+        <!-- <view class='icon-friendfavor text-pink'>
+            <view class='cu-tag badge'>99</view>
+        </view> -->
+        <text class="text-sm">445人已咨询</text>
+    </view>
+    <view class='bg-gradual-red submit margin-left-xl text-xl'>
+        <button class='button-no padding-top-xs' open-type="contact">
+        <text class='text-white'>案例咨询</text>
+        </button>
+    </view>
+</view>
+
+<view class='cu-tabbar-height' ></view>

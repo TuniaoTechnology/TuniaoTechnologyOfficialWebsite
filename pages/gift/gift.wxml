@@ -1,0 +1,201 @@
+<!--pages/gift/gift.wxml-->
+<!-- <view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-orange text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background-image:url(https://cdn.nlark.com/yuque/0/2019/png/280373/1567328447930-assets/web-upload/ccad0e99-2e9b-405b-95f2-5dce740fd570.png);">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> 搜索
+    </navigator>
+  </view>
+</view> -->
+
+
+<!-- <image src='https://cdn.nlark.com/yuque/0/2019/png/280373/1567328447930-assets/web-upload/ccad0e99-2e9b-405b-95f2-5dce740fd570.png' mode='widthFix' class='tn-bg'></image> -->
+
+
+
+
+<view class="cu-custom" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+
+    
+
+    <view class="">
+      <navigator class='padding-left-xs' url="../../pages/about/about" delta="1" hover-class="none">
+        <view class="cu-avatar round shadow " style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568100394340-assets/web-upload/792c999f-bf08-41d5-a33b-21fc5bb263a2.jpeg);">
+        </view>
+
+      </navigator>
+    </view>
+    <view class='content' style='top:{{StatusBar}}px;'>
+        <text class="text-xxl text-black">图鸟官网</text>
+    </view>
+    <!-- <view class='action'>
+      <navigator class='' url="../../pages/search/search" delta="1" hover-class="none">
+        <view class='search-form search-round text-white search-index'>
+          <text class="icon-search text-white text-bold"></text>
+          <input class="text-white" disabled type="text" placeholder="你想要什么礼物？" confirm-type="search" placeholder-style="color:#fff"></input>
+        </view>
+      </navigator>
+    </view> -->
+  </view>
+</view>
+
+
+<view class="cu-bar bg-white margin-top">
+  <view class='action'>
+    <text class='text-bold text-title text-xxl'>Hi，早上好吖</text>
+  </view>
+  <view class='action text-xxl' bindtap="navSearch">
+    <text class='text-bold text-black icon-search margin-right-xs'> </text>
+  </view>
+</view>
+
+
+<view>
+    <swiper class="padding radius-index screen-swiper {{DotStyle?'round-dot':'square-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item class="radius-index {{cardCur==index?'cur':''}}">
+        <image class='' src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574735460307-assets/web-upload/b47753a0-58db-4bf3-a97b-340ddba70eef.jpeg" mode='aspectFill'></image>
+    </swiper-item>
+    <swiper-item class="radius-index {{cardCur==index?'cur':''}}">
+        <image class='' src="https://cdn.nlark.com/yuque/0/2019/png/280373/1574735459784-assets/web-upload/db11b70f-0b2c-4b20-9e03-b650d7f0fe06.png" mode='aspectFill'></image>
+    </swiper-item>
+    <swiper-item class="radius-index {{cardCur==index?'cur':''}}">
+        <image class='' src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574735459657-assets/web-upload/924619aa-c0f9-426e-8ba6-b7392fbe53c8.jpeg" mode='aspectFill'></image>
+    </swiper-item>
+    <swiper-item class="radius-index {{cardCur==index?'cur':''}}">
+        <image class='' src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574735460224-assets/web-upload/8c310851-15a3-4f48-a82c-9d7a1be19c33.jpeg" mode='aspectFill'></image>
+    </swiper-item>
+    </swiper>
+</view>
+<!-- <view class="padding-top-sl">
+  <swiper class="card-swiper {{DotStyle?'round-dot':'square-dot'}} " indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#ff8b00" indicator-active-color="#ff8b00">
+    <swiper-item wx:for="{{4}}" wx:key class="{{cardCur==index?'cur':''}}">
+      <view class='bg-img shadow-blur' style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1567333681332-assets/web-upload/da1f5701-5e5f-4553-b607-418b61ebfe23.jpeg)"></view>
+    </swiper-item>
+  </swiper>
+</view> -->
+
+
+<view class="cu-bar bg-white margin-top-xl">
+  <view class='action'>
+    <text class='text-bold text-title text-xxl'>最新项目</text>
+  </view>
+  <view class='action text-xl opacity-a'>
+    全部 <text class='icon-magic margin-left-xs'> </text>
+  </view>
+</view>
+
+<block>
+  <view class="padding-sm bg-white">
+    <view class="flex">
+      <view bindtap="navDetail" class='flex-twice bg-white margin-xs bg-img shadow-blur radius-index solid' style="height:330rpx;background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574736532062-assets/web-upload/5dc61973-518a-48af-ba5d-68d6eeee5c4a.jpeg)">
+      </view>
+      <view class='flex-sub radius margin-right-xs margin-left-sm'>
+        <view bindtap="navDetail" class='flex-sub bg-white margin-top-xs bg-img shadow-blur radius-index solid' style="height:150rpx;background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574736532613-assets/web-upload/a9d7821d-7bc4-4d26-915d-5a1bd0ef340a.jpeg)"></view>
+        <view bindtap="navDetail" class='flex-sub bg-white margin-top bg-img shadow-blur radius-index solid' style="height:150rpx;background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574736532111-assets/web-upload/e80331b5-3172-4c01-930d-0077f2198835.jpeg)"></view>
+      </view>
+    </view>
+  </view>
+</block>
+
+
+
+
+<!-- 
+<block>
+  <view class="bg-white">
+    <view class="flex solid-bottom padding align-start">
+      <view class='bg-grey padding-xl margin-xs radius'>ColorUi</view>
+      <view class='bg-grey padding-sm margin-xs radius'>start</view>
+      <view class='bg-grey padding-sm margin-xs radius'>start</view>
+
+    </view>
+    <view class="flex solid-bottom padding align-end">
+      <view class='bg-grey padding-lg margin-xs radius'>ColorUi</view>
+      <view class='bg-grey padding-sm margin-xs radius'>end</view>
+      <view class='bg-grey padding-sm margin-xs radius'>end</view>
+
+    </view>
+    <view class="flex solid-bottom padding align-center">
+      <view class='bg-grey padding-lg margin-xs radius'>ColorUi</view>
+      <view class='bg-grey padding-sm margin-xs radius'>center</view>
+      <view class='bg-grey padding-sm margin-xs radius'>center</view>
+
+    </view>
+  </view>
+</block> -->
+
+
+<view class="cu-bar bg-white margin-top-xl">
+  <view class='action'>
+    <text class='text-bold text-title text-xxl'>业务范围</text>
+  </view>
+  <!-- <view class='action text-xl'>
+    全部 <text class='icon-magic margin-left-xs'> </text>
+  </view> -->
+</view>
+
+
+<view class='nav-list margin-top'>
+  <view bindtap="navProcess" class="nav-li bg-index1">
+    <view class="nav-title">图鸟</view>
+    <view class="nav-name">UI设计</view>
+    <text class='icon-wefill'></text>
+  </view>
+  <view bindtap="navProcess" class="nav-li bg-index2">
+    <view class="nav-title">图鸟</view>
+    <view class="nav-name">微信小程序</view>
+    <text class='icon-weixin'></text>
+  </view>
+<view bindtap="navProcess" class="nav-li bg-index3">
+    <view class="nav-title">图鸟</view>
+    <view class="nav-name">网站开发</view>
+    <text class='icon-card'></text>
+  </view>
+  <view bindtap="navProcess" class="nav-li bg-index4">
+    <view class="nav-title">图鸟</view>
+    <view class="nav-name">定制开发</view>
+    <text class='icon-skinfill'></text>
+  </view>
+</view>
+
+
+
+
+
+
+<!-- <view class="cu-bar bg-white margin-top-xl">
+  <view class='action'>
+    <text class='text-bold text-title text-xxl'>推荐商品</text>
+  </view>
+  <view class='action text-xl'>
+    全部 <text class='icon-magic margin-left-xs'> </text>
+  </view>
+</view>
+
+<view class="cu-card">
+  <view class="cu-item bg-img shadow-blur" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574131406884-assets/web-upload/0aac3912-9e84-4222-a192-279b2b5f758d.jpeg)">
+    <view class="cardTitle">
+      <text class="name-title-a">是时候表演真正的技术了！</text>
+    </view>
+  </view>
+  <view class="cu-item bg-img shadow-blur" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574131415476-assets/web-upload/18e8254a-7861-4ede-9d5c-f8e505c732c7.jpeg)">
+    <view class="cardTitle">
+      <text class="name-title-a">我会叫他们好受的！</text>
+    </view>
+  </view>
+  <view class="cu-item bg-img shadow-blur" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574131119491-assets/web-upload/b883879f-33e1-477b-8b0b-ed288fbd6dfd.jpeg)">
+    <view class="cardTitle">
+      <text class="name-title-a">好运，不会眷顾傻瓜。</text>
+    </view>
+  </view>
+  <view class="cu-item bg-img shadow-blur" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1574131417946-assets/web-upload/1c44c37d-a567-43e3-af32-b012d0c08e2d.jpeg)">
+    <view class="cardTitle">
+      <text class="name-title-a">我的能量，无穷无尽。</text>
+    </view>
+  </view>
+</view> -->
+
+
+
+
+<view class='cu-tabbar-height'></view>

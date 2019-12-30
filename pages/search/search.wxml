@@ -1,0 +1,39 @@
+<!--pages/search/search.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+    <view class="cu-bar fixed bg-white text-black shadowimport bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+        <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+            <text class='icon-back_android' style="font-size:48rpx"></text>
+            <text class="">搜索</text>
+        </navigator>
+    </view>
+</view>
+
+<view class="cu-bar search bg-white margin-top-xl">
+  <view class='search-form round search-search text-black'>
+    <text class="icon-search"></text>
+    <input type="text" placeholder="搜索‘可我会像’" confirm-type="search"></input>
+  </view>
+  <view class='action'>
+    <button class='cu-btn bg-gradual-orange shadow-blur round'>搜索</button>
+  </view>
+</view>
+
+<view class="cu-bar bg-white padding-top">
+  <view class='action'>
+    最近搜索
+  </view>
+  <view class='action'>
+    <text class="icon-delete text-red"></text>
+  </view>
+</view>
+
+<view class='padding-sm bg-white flex flex-wrap'>
+  <view class="padding-xs">
+    <view class='cu-tag bg-gray light round margin-bottom padding text-df'>
+      蔡东东
+    </view>
+    <view class='cu-tag bg-gray light round margin-bottom padding text-df'>
+      UI工程师
+    </view>
+  </view>
+</view>

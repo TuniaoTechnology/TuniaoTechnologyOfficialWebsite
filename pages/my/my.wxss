@@ -1,0 +1,42 @@
+/* pages/my/my.wxss */
+.my_logo{
+  background: none;
+  padding: 50rpx 0 30rpx 0;
+}
+.my-radius{
+  border-radius: 12rpx;
+  overflow: hidden
+}
+
+.my-icon image {
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
+  margin: 0 auto
+}
+
+.my-iconcolor{
+  background: rgba(255, 255, 255, 0.96)
+}
+
+.shadow-shop {
+  box-shadow: 0rpx 0rpx 90rpx 0rpx rgba(0, 0, 0, 0.1);
+}
+.qrcode-img{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  bottom: 350rpx;
+  right: 30rpx;
+  z-index: 1024;
+  opacity: 0.8;
+  box-shadow: 0rpx 8rpx 30rpx 0rpx rgba(0, 0, 0, 0.3);
+  border: none
+}
+
+.text-my{
+    color: #aaa !important;
+}
+
+
+/* 功能 */

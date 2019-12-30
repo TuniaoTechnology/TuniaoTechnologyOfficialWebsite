@@ -1,0 +1,209 @@
+<!--pages/product/product.wxml-->
+<!-- <view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed  text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> 产品详情
+    </navigator>
+  </view>
+</view> -->
+
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed text-white bg-product" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action border-custom' open-type="navigateBack" delta="1" hover-class="none" style='width:{{Custom.width}}px;height:{{Custom.height}}px;margin-left:calc(750rpx - {{Custom.right}}px)'>
+      <text class='icon-back'></text>
+      <text class='icon-homefill'></text>
+    </navigator>
+  </view>
+</view>
+
+<button class='' bindtap="showModal" data-target="DrawerModalL">
+  <image src='../../images/fenxiang.png' class='share-img png round shadow-lg bg-white' mode='aspectFit'>
+  </image>
+</button>
+
+<!-- <view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-orange text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background-image:url(https://cdn.nlark.com/yuque/0/2019/png/280373/1567328447930-assets/web-upload/ccad0e99-2e9b-405b-95f2-5dce740fd570.png);">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> 产品详情
+    </navigator>
+  </view>
+</view> -->
+
+<!-- ff8b00 -->
+
+
+<view style="margin-top:-{{CustomBar}}px;">
+  <swiper class="product-swiper {{DotStyle?'round-dot':'square-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="400" indicator-color="#fff" indicator-active-color="#fff">
+    <swiper-item wx:for="{{4}}" wx:key>
+      <image src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568100394535-assets/web-upload/f5af2bf6-3a8f-42e7-85ce-8eaef41c2ffe.jpeg" mode='aspectFill'>
+      </image>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+
+<view class="cu-bar bg-white margin-top-sm">
+  <view class='action'>
+    <text class='text-black text-bold tn-align'>UI设计全面掌握学习课程</text> 
+  </view>
+</view>
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='text-red product-price'>￥2541.53</text> 
+  </view>
+  <view class='action'>
+    <text class='text-gray '>销量 2564</text> 
+  </view>
+</view>
+
+
+<view class="cu-list menu sm-border tn-border">
+  <view class="cu-item arrow">
+    <view class='content'>
+      <text class='text-black'>产品标签</text>
+    </view>
+    <view class='action'>
+      <view class="cu-tag round bg-orange light">课程</view>
+      <view class="cu-tag round bg-olive light">设计</view>
+      <view class="cu-tag round bg-blue light">界面</view>
+    </view>
+  </view>
+  <view class="cu-item arrow">
+    <view class='content'>
+      <text class='text-black'>优惠减免</text>
+    </view>
+    <view class='action'>
+      <button class='cu-btn round bg-orange shadow sm'>
+         <text class='icon-redpacket_fill'> 领取</text>
+      </button>
+    </view>
+  </view>
+  <view class="cu-item arrow">
+    <view class='content'>
+      <text class='text-black'>他们都在买</text>
+    </view>
+    <view class='action'>
+      <view class="cu-avatar-group">
+        <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></view>
+        <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
+        <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
+        <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="cu-item arrow">
+    <view class='content'>
+      <text class='text-black'>用户评价(4)</text>
+    </view>
+    <view class='action'>
+      <text class='text-grey text-sm'>查看更多</text>
+    </view>
+  </view> -->
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+<scroll-view scroll-x class="bg-white nav tn-border margin-bottom solid-bottom padding-bottom-sm">
+  <view class='flex text-center'>
+    <view class="cu-item text-lg flex-sub {{index==TabCur?'title-text cur text-bold text-xl':''}}" wx:for="{{ProductNav}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</scroll-view>
+
+
+<block wx:if="{{TabCur==0}}">
+  
+  
+  <view class="product-detail-box margin-bottom-xl">
+            <view class="product-detail-imgs">
+                <block>
+                    <image src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568188760633-assets/web-upload/b565338b-b961-498d-aebd-4201594bd156.jpeg" mode="widthFix"></image>
+                    <image src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568188761260-assets/web-upload/ab656081-eaa2-4841-b6bd-93fb23148e15.jpeg" mode="widthFix"></image>
+                </block>
+                <view class="text-white margin-sm">
+                    图鸟
+                </view>
+            </view>
+
+  </view>
+
+
+</block>
+
+
+<block wx:if="{{TabCur==1}}">
+  <view class=" margin-bottom-xl">
+    <view class="cu-list menu sm-border">
+      <view class="cu-item">
+        <view class='content'>
+          <text class='text-grey'>生产地</text>
+        </view>
+        <view class='action'>
+          <text class='text-grey'>可我会像</text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class='content'>
+          <text class='text-grey'>微信</text>
+        </view>
+        <view class='action'>
+          <text class='text-grey'>vv7064</text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class='content'>
+          <text class='text-grey'>作用</text>
+        </view>
+        <view class='action'>
+          <text class='text-grey'>参考配色</text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class='content'>
+          <text class='text-grey'>其他</text>
+        </view>
+        <view class='action'>
+          <text class='text-grey'>合作可聊可撩</text>
+        </view>
+      </view>
+    </view>
+    <view class="text-white margin-sm">
+      图鸟
+    </view>
+  </view>
+</block>
+
+
+
+<view class="box tn-footerfixed">
+    <view class="cu-bar bg-white tabbar border shop">
+        <button class="action" open-type='contact'>
+            <view class='icon-service text-red'>
+                <view class='cu-tag badge'></view>
+            </view>
+            <text class="text-red">客服</text>
+        </button>
+        <view class="action" bindtap="onCartTap">
+            <view class='icon-cart'>
+                <view class="cu-tag badge">3</view>
+            </view>
+            <text class="">购物车</text>
+        </view>
+        <view class='btn-group'>
+            <button class='cu-btn bg-orange round shadow-blur' bindtap="checkLogin" data-target="cart">加入购物车</button>
+            <!-- <button class='cu-btn bg-orange round shadow-blur' bindtap="showModal" data-target="bottomModal">加入购物车</button> -->
+            <button class='cu-btn bg-red round shadow-blur' bindtap="checkLogin" data-target="order">立即下单</button>
+        </view>
+    </view>
+</view>

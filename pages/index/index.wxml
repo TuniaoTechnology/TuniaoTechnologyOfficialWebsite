@@ -1,0 +1,306 @@
+<!--index.wxml-->
+
+<!-- <view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-orange" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action text-black text-bold' url="../../pages/set/set" delta="1" hover-class="none">
+      <text class='icon-home'></text> 哇哇
+    </navigator>
+
+  </view>
+</view> -->
+
+<image src='https://cdn.nlark.com/yuque/0/2019/png/280373/1567328447930-assets/web-upload/ccad0e99-2e9b-405b-95f2-5dce740fd570.png' mode='widthFix' class='tn-bg'></image>
+
+
+<view class="cu-custom">
+  <view class="cu-bar fixed" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+
+    
+
+    <view class="">
+      <navigator class='' url="../../pages/index/index" delta="1" hover-class="none">
+        <view class="cu-avatar round" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/png/280373/1567610735493-assets/web-upload/94de4712-682f-4436-9eb3-dc42f155241e.png);">
+          <!-- <view class="cu-tag badge bg-gradual-green">2</view> -->
+        </view>
+
+      </navigator>
+    </view>
+    <view class='action'>
+      <navigator class='' url="../../pages/search/search" delta="1" hover-class="none">
+        <view class='search-form search-round text-white search-index'>
+          <text class="icon-search text-white text-bold"></text>
+          <input class="text-white" disabled type="text" placeholder="搜索‘可我会像’" confirm-type="search" placeholder-style="color:#fff"></input>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+
+<!-- <swiper class="screen-swiper {{DotStyle?'round-dot':'square-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{4}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <image class='' src="https://image.weilanwl.com/img/4x3-{{index+1}}.jpg" mode='aspectFill'></image>
+  </swiper-item>
+</swiper> -->
+<view class="padding-top-sl">
+  <swiper class="card-swiper {{DotStyle?'round-dot':'square-dot'}} " indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#ff8b00" indicator-active-color="#ff8b00">
+    <swiper-item wx:for="{{4}}" wx:key class="{{cardCur==index?'cur':''}}">
+      <view class='bg-img shadow-blur' style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1567333681332-assets/web-upload/da1f5701-5e5f-4553-b607-418b61ebfe23.jpeg)"></view>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+
+
+<view class="cu-list grid col-4 no-border bg-white">
+  <view class="cu-item">
+    <navigator url="../../pages/activity/activity" delta="1" hover-class="none">
+    <view class=' index-icon'>
+      <image src='/images/youhui.png' class='' mode='aspectFit'></image>
+      <!-- <view class="cu-tag badge">
+        <block >99</block>
+      </view> -->
+    </view>
+    <text class="">优惠折扣</text>
+    </navigator>
+  </view>
+  <view class="cu-item">
+    <view class=' index-icon'>
+      <image src='/images/shuma.png' class='' mode='aspectFit'></image>
+      <!-- <view class="cu-tag badge">
+        <block >99</block>
+      </view> -->
+    </view>
+    <text class="">品牌专区</text>
+  </view>
+  
+  <view class="cu-item">
+    <view class=' index-icon'>
+      <image src='/images/huiyuan.png' class='' mode='aspectFit'></image>
+      <!-- <view class="cu-tag badge">
+        <block >99</block>
+      </view> -->
+    </view>
+    <text class="">会员精选</text>
+  </view>
+    <view class="cu-item">
+    <view class=' index-icon'>
+      <image src='/images/xianshi.png' class='' mode='aspectFit'></image>
+      <!-- <view class="cu-tag badge">
+        <block >99</block>
+      </view> -->
+    </view>
+    <text class="">今日特惠</text>
+  </view>
+</view>
+
+
+
+<view class="bg-white">
+        <navigator url="" delta="1" hover-class="none">
+          <view class="">
+            <image class="banner-index" mode="aspectFit" src="https://cdn.nlark.com/yuque/0/2019/png/280373/1564109592183-assets/web-upload/3f355341-0faa-401b-b812-aa109341257e.png">
+            </image>
+          </view> 
+        </navigator>    
+</view>
+
+<view class="title-header bg-white">
+  <view class="title-text">
+    推 / 荐 / 商 / 品
+  </view>
+</view>
+
+
+
+
+
+
+
+<view class="padding-sm bg-white margin-bottom-index">
+
+    <view class="margin-top">
+      <view class="products-box">
+        
+        <!-- 产品，从这里循环输出-链接测试用的 -->
+        <view class="basis-df padding-xs">
+          <navigator url="../../pages/product/product" delta="1" hover-class="none">
+          <view class="grid col-1 grid-square flex-sub">
+            <view class="bg-img product-border" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568100394410-assets/web-upload/f4a4a378-bee4-4dc2-b9a8-cc114d95fdde.jpeg);">
+                <view class="cu-tag bg-red">
+                  <text class='icon-hotfill'> 热卖吖</text>
+                </view>
+            </view>
+          </view>
+          <view class="grid col-1 margin-bottom">
+            <view class="">
+                <view class="text-xl product-title tn-align">
+                  <text class='text-black index-title'>卖艺不卖身吖吖吖</text>
+                </view>
+                <view class="text-xl product-price">
+                  <text class='text-red'>￥2541.53</text>
+                  <text class='delete-price text-sm text-gray'>￥2555.52</text>
+                  <!-- <text class='icon-goodsnew text-red fr text-xl'></text> -->
+                </view>
+            </view>
+          </view>
+          </navigator>         
+        </view>
+        
+
+        <view class="basis-df padding-xs">
+          <navigator url="../../pages/product/product" delta="1" hover-class="none">
+          <view class="grid col-1 grid-square flex-sub">
+            <view class="bg-img product-border" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568100394535-assets/web-upload/f5af2bf6-3a8f-42e7-85ce-8eaef41c2ffe.jpeg);">
+                <view class="cu-tag bg-red">
+                  <text class='icon-hotfill'> 热卖吖</text>
+                </view>
+            </view>
+          </view>
+          <view class="grid col-1 margin-bottom">
+            <view class="">
+                <view class="text-xl product-title tn-align">
+                  <text class='text-black index-title'>卖艺不卖身</text>
+                </view>
+                <view class="text-xl product-price">
+                  <text class='text-red'>￥2541.53</text>
+                  <text class='price delete-price text-sm text-gray'>￥2555.52</text>
+                  <!-- <text class='icon-goodsnew text-red fr text-xl'></text> -->
+                </view>
+            </view>
+          </view> 
+          </navigator>            
+        </view>
+
+        <view class="basis-df padding-xs">
+          <view class="grid col-1 grid-square flex-sub">
+            <view class="bg-img product-border" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568101679032-assets/web-upload/ee18e6f9-6735-4cf1-a628-f2b4234dc1dc.jpeg);">
+                <view class="cu-tag bg-red">
+                  <text class='icon-hotfill'> 热卖吖</text>
+                </view>
+            </view>
+          </view>
+          <view class="grid col-1 margin-bottom">
+            <view class="">
+                <view class="text-xl product-title tn-align">
+                  <text class='text-black index-title'>卖艺不卖身吖吖吖真的吖吖吖</text>
+                </view>
+                <view class="text-xl product-price">
+                  <text class='text-red'>￥2541.53</text>
+                  <text class='price delete-price text-sm text-gray'>￥2555.52</text>
+                  <!-- <text class='icon-goodsnew text-red fr text-xl'></text> -->
+                </view>
+            </view>
+          </view>         
+        </view>
+
+        <view class="basis-df padding-xs">
+          <view class="grid col-1 grid-square flex-sub">
+            <view class="bg-img product-border" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568100394340-assets/web-upload/792c999f-bf08-41d5-a33b-21fc5bb263a2.jpeg);">
+                <!-- <view class="cu-tag bg-red">
+                  <text class='icon-hotfill'> 热卖吖</text>
+                </view> -->
+            </view>
+          </view>
+          <view class="grid col-1 margin-bottom">
+            <view class="">
+                <view class="text-xl product-title tn-align">
+                  <text class='text-black index-title'>卖艺不卖身吖吖吖</text>
+                </view>
+                <view class="text-xl product-price">
+                  <text class='text-red'>￥2541.53</text>
+                  <text class='price delete-price text-sm text-gray'>￥2555.52</text>
+                  <!-- <text class='icon-goodsnew text-red fr text-xl'></text> -->
+                </view>
+            </view>
+          </view>         
+        </view>
+
+        <view class="basis-df padding-xs">
+          <view class="grid col-1 grid-square flex-sub">
+            <view class="bg-img product-border" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1568100394410-assets/web-upload/f4a4a378-bee4-4dc2-b9a8-cc114d95fdde.jpeg);">
+                <view class="cu-tag bg-red">
+                  <text class='icon-hotfill'> 热卖吖</text>
+                </view>
+            </view>
+          </view>
+          <view class="grid col-1 margin-bottom">
+            <view class="">
+                <view class="text-xl product-title tn-align">
+                  <text class='text-black index-title'>卖艺不卖身吖吖吖</text>
+                </view>
+                <view class="text-xl product-price">
+                  <text class='text-red'>￥2541.53</text>
+                  <text class='price delete-price text-sm text-gray'>￥2555.52</text>
+                  <!-- <text class='icon-goodsnew text-red fr text-xl'></text> -->
+                </view>
+            </view>
+          </view>         
+        </view>
+
+
+        
+
+        <!-- <view class="basis-df padding-xs" wx:for="{{5}}" wx:key>
+
+        </view> -->
+
+      </view>
+    </view>
+
+
+    <!-- <view class="flex" wx:for="{{4}}" wx:key>
+      <view class='flex-sub bg-grey padding-sm margin-xs radius bg-gradual-red shadow-blur'>
+        <view class="text-lg padding">魅红</view>
+        <view class='margin-top-sm text-Abc padding'>#f43f3b - #ec008c</view>
+      </view>
+      <view class='flex-sub bg-grey padding-sm margin-xs radius bg-gradual-orange shadow-blur'>
+        <view class="text-lg padding">鎏金</view>
+        <view class='margin-top-sm text-Abc padding'>#ff9700 - #ed1c24</view>
+      </view>
+    </view> -->
+</view>
+
+
+
+
+
+
+<!-- <view class='foot'>
+  <view class="cu-bar tabbar bg-white">
+    <navigator url="../index/index" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/index2.png'></image>
+        </view>
+        <view class='text-shop-active'>首页</view>
+      </view>
+    </navigator>
+    <navigator url="../cate/cate" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/cate1.png'></image>
+        </view>
+        <view class='text-shop-no'>分类</view>
+      </view>
+    </navigator>
+    <navigator url="../cart/cart" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/cart1.png'></image>
+          <view class='cu-tag badge'></view>
+        </view>
+        <view class='text-shop-no'>购物车</view>
+      </view>
+    </navigator>
+    <navigator url="../my/my" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/my1.png'></image>
+        </view>
+        <view class='text-shop-no'>我的</view>
+      </view>
+    </navigator>
+  </view>
+</view> -->

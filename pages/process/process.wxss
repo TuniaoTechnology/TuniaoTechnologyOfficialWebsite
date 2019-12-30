@@ -1,0 +1,108 @@
+.margin-avatar{
+  margin-left: -15rpx
+}
+.margin-avatar-bottom{
+  margin-bottom: 150rpx
+}
+
+.line-blue-tuniao::after {
+  border-color: #0070FF !important;
+  color: #0070FF;
+}
+.resume {
+  /* background: #f1f1f1; */
+  padding-top: 10rpx;
+  border-radius: 6rpx;
+  display: block;
+  color: #666;
+  line-height: 1.6;
+  
+}
+
+
+
+.resume+.resume {
+  margin-top: 20rpx;
+}
+
+.resume2{
+  padding-top: 10rpx;
+  border-radius: 6rpx;
+  display: block;
+  color: #666;
+  line-height: 1.6;
+
+}
+
+.edit {
+  position: fixed;
+  width: 100rpx;
+  height: 100rpx;
+  bottom: 250rpx;
+  right: 30rpx;
+  z-index: 1;
+  opacity: 0.8;
+  border: 1px solid #189eff;
+  border-radius: 100rpx;
+  box-shadow: 0rpx 0rpx 6rpx rgba(24, 158, 255, 1);
+  padding: 20rpx;
+}
+.love {
+  position: fixed;
+  width: 100rpx;
+  height: 100rpx;
+  bottom: 550rpx;
+  right: 30rpx;
+  z-index: 1024;
+  opacity: 0.8;
+  border: 1px solid #189eff;
+  border-radius: 100rpx;
+  box-shadow: 0rpx 0rpx 6rpx rgba(24, 158, 255, 1);
+  padding: 20rpx;
+}
+
+.bg-img-cont {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350rpx;
+}
+
+.share-png {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
+
+.share-wechat {
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 10rpx -4rpx 0;
+  opacity: 0.5
+}
+.button-no::after {
+  border: none;
+}
+
+.title-pyq{
+      background-image:-webkit-linear-gradient(0deg, #1B6CFF, #1CA5FF); /*1B6CFF 1B42FF*/
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+    opacity: 0.5
+}
+
+.edit-fixed {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1024;
+  box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+.button-no {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  
+}

@@ -1,0 +1,146 @@
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+    <view class="cu-bar fixed bg-white text-black shadowimport bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+        <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+            <text class='icon-back_android' style="font-size:48rpx"></text>
+            <text class="">资讯 - UI设计</text>
+        </navigator>
+    </view>
+</view>
+
+<view class="">
+
+    <view class="title-header">
+        <view class="text-black padding-xl margin-xl text-center">
+            一套独特风格的安卓 UI 模板，PSD源文件免费分享
+        </view>
+    </view>
+
+    <!--  -->
+
+    <view class='text-lg'>
+        <view class='text-left padding'>
+            之前很多人跟我提过说，问我，能不能分享些UI方面的内容，我说，当然可以，刚好最近也有些项目的APP，需要改版，自己也收集了不少素材，但是看到这套安卓风格的模板，真的很喜欢，所以也分享给那些做UI设计的朋友们。
+
+        </view>
+
+        <view class='text-left padding'>
+            这个是PSD的源文件，如果你想要获取全套PSD源文件,请关注我们的公众号：【图鸟工作室】，并且在公号里输入关键字“A001”，则可以获取下载地址，进行下载此套源文件。
+        </view>
+    </view>
+
+    <!-- 图片 120*350  -->
+    <view class="cu-card">
+        <view class="cu-item bg-img shadow-blur" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1575017416483-assets/web-upload/b7d072ea-7285-43ba-bf2f-d1e1d65e14c3.jpeg)">
+            <view class="cardTitle">
+            </view>
+        </view>
+        <view class="cu-item bg-img shadow-blur" style="background-image:url(https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1575017417402-assets/web-upload/0d26debd-04cb-44ee-a17e-d779c3782f33.jpeg)">
+            <view class="cardTitle">
+            </view>
+        </view>
+
+    </view>
+
+
+
+    <view class="cu-bar bg-white solid-bottom padding-left-xs strip-bottom padding-bottom">
+        <view class='action'>
+            <text class='icon-attentionfavor padding-right-xs'></text>
+            <text class="text-df">524</text>
+        </view>
+        <view class='action'>
+            <button class='cu-btn bg-blue shadow round sm'>
+                <text class='text-sm padding-right-xs'>分享</text>
+                <text class="icon-share text-df"></text>
+            </button>
+
+        </view>
+    </view>
+
+
+    <view class="cu-bar bg-white solid-bottom">
+        <view class='action'>
+            热门推荐
+        </view>
+        <!-- <view class='action'>
+            <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="gridModal">更多</button>
+        </view> -->
+    </view>
+
+
+
+
+
+
+<view class="cu-card article no-card padding-top">
+    <view class="cu-item" wx:for="{{2}}" wx:key>
+        <view class="content"  bindtap="navActivity">
+            
+            <view class="desc" style="margin-top:-8rpx">
+                <view class='text-content product-title'>
+                    <view class='text-black name-title-b text-xl'>一套独特酷炫风格的安卓UI模板，PSD源文件免费分享</view>
+
+                    <view class='text-gray name-title-a text-lg padding-top-xs'>这是一款很厉害的源文件</view>
+                </view>
+
+                <view class="cu-list  price price-product text-title text-lg text-red" style="margin-top:-8rpx">
+                    <view class='flex justify-between'>
+                        <view class='cu-tag bg-label{{index+2}} light round margin-right-sm margin-bottom text-df padding text-bold'>UI设计</view>
+                        <view class="margin-top-xs text-gray opacity-a margin-right">
+                            <text class="icon-attentionfill"></text> 129
+                            <text class="icon-appreciatefill margin-left-sm"></text> 20
+                        </view>
+                    </view>
+                </view>
+
+
+            </view>
+            <image class="product-border solid" style="margin-right:0rpx" src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1575017416483-assets/web-upload/b7d072ea-7285-43ba-bf2f-d1e1d65e14c3.jpeg" mode="aspectFill"></image>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <view class="cu-bar bg-white tabbar shop shadow edit-fixed">
+
+        <view>
+            <view class="cu-avatar-group margin-left-xs">
+                <view class="cu-avatar round margin-xs shadow-sm" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+                <view class="cu-avatar round margin-xs shadow-sm" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
+                <view class="cu-avatar round margin-xs shadow-sm" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
+                <view class="cu-avatar round margin-xs shadow-sm" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></view>
+            </view>
+            <!-- <button class="action text-gray text-shadow">
+                <view class='icon-community text-gray'>
+                </view>
+            </button> -->
+        </view>
+
+        <view class=' margin-left-xl text-xl margin-right'>
+            <text class='icon-appreciatefill'></text> 56
+        </view>
+    </view>
+
+
+
+
+
+
+
+
+
+    <view class='cu-tabbar-height'></view>
+
+</view>

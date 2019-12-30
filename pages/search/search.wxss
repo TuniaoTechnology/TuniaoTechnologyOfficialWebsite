@@ -1,0 +1,4 @@
+/* pages/search/search.wxss */
+.search-search{
+  background: rgba(0, 0, 0, 0.06);
+}

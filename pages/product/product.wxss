@@ -1,0 +1,45 @@
+/* pages/product/product.wxss */
+.product-swiper {
+  min-height: 750rpx;
+}
+
+.product-swiper image {
+  width: 100%;
+  display: block;
+  height: 100%;
+  margin: 0;
+}
+
+.product-price{
+  margin-left: -5rpx;
+}
+
+.share-img {
+  position: fixed;
+  padding: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+  top: 680rpx;
+  right: 20rpx;
+  z-index: 1024;
+  opacity: 0.8;
+  box-shadow: 0rpx 8rpx 30rpx 0rpx rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.bg-product {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  color: #fff;
+}
+
+.product-detail-box{
+  padding-bottom: 20rpx;
+}
+.product-detail-imgs image{
+  width: 100%;
+  float: left;
+  /* height:400rpx; 不定高了*/
+  border:0;
+  padding: 0;
+  margin: 0
+}

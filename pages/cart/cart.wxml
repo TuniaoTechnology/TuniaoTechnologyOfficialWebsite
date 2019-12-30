@@ -1,0 +1,93 @@
+<!--pages/cart/cart.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+    <view class="cu-bar fixed shadowimport bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+        <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+            <text class="text-xxl text-black">资讯</text>
+        </navigator>
+    </view>
+
+</view>
+
+
+
+<view class="cu-card article no-card padding-top margin-top-lg" style="padding-bottom:{{CustomBar}}px;">
+    <view class="cu-item" wx:for="{{8}}" wx:key>
+        <view class="content margin-top-sm"  bindtap="navActivity">
+            <image class="product-border shadow-df" src="https://cdn.nlark.com/yuque/0/2019/jpeg/280373/1575017417402-assets/web-upload/0d26debd-04cb-44ee-a17e-d779c3782f33.jpeg" mode="aspectFill"></image>
+            <view class="desc" style="margin-top:-8rpx">
+                <view class='text-content product-title'>
+                    <view class='text-black name-title-b text-xl'>一套独特酷炫风格的安卓UI模板，PSD源文件免费分享</view>
+
+                    <view class='text-gray name-title-a text-lg padding-top-xs'>这是一款很厉害的源文件</view>
+                </view>
+
+                <view class="cu-list  price price-product text-title text-lg text-red" style="margin-top:-8rpx">
+                    <view class='flex justify-between'>
+                        <view class='cu-tag bg-label{{index+1}} light round margin-right-sm margin-bottom text-df padding text-bold'>UI设计</view>
+                        <view class="margin-top-xs text-gray opacity-a">
+                            <text class="icon-attentionfill"></text> {{index+128+index*7}}
+                            <text class="icon-appreciatefill margin-left-sm"></text> {{index+20+index*5}}
+                        </view>
+                    </view>
+                </view>
+
+
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+<!-- <view class="text-center text-xxl text-black ">
+        <view class="">
+          <image class="" mode="aspectFit" src="https://cdn.nlark.com/yuque/0/2019/png/280373/1567932594071-assets/web-upload/2b3575c0-60ac-41df-acbd-305e80e32c9c.png">
+          </image>
+        </view> 
+        购物车空空如也
+      </view> -->
+
+
+
+
+
+
+<!-- <view class='foot'>
+  <view class="cu-bar tabbar bg-white">
+    <navigator url="../index/index" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/index1.png'></image>
+        </view>
+        <view class='text-shop-no'>首页</view>
+      </view>
+    </navigator>
+    <navigator url="../cate/cate" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/cate1.png'></image>
+        </view>
+        <view class='text-shop-no'>分类</view>
+      </view>
+    </navigator>
+    <navigator url="../cart/cart" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/cart2.png'></image>
+          <view class='cu-tag badge'></view>
+        </view>
+        <view class='text-shop-active'>购物车</view>
+      </view>
+    </navigator>
+    <navigator url="../my/my" hover-class="none">
+      <view class="action">
+        <view class='icon-cu-image'>
+          <image src='/images/tabbar/my1.png'></image>
+        </view>
+        <view class='text-shop-no'>我的</view>
+      </view>
+    </navigator>
+  </view>
+</view> -->

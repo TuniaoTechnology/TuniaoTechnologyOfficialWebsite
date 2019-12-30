@@ -1,0 +1,176 @@
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+    <view class="cu-bar fixed bg-white text-black shadowimport bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+        <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+            <text class='icon-back_android' style="font-size:48rpx"></text>
+            <text class="">业务 - UI设计</text>
+        </navigator>
+    </view>
+</view>
+
+
+
+<view class="cu-timeline margin-top-sm">
+
+
+    <view class="cu-time">
+        <text class='icon-selection text-white text-lg bg-blue round padding-xs'></text>
+        <text class='text-xl margin-left'>需求沟通</text>
+    </view>
+    <block>
+        <view class='cu-item text-red'>
+            <view class="resume text-lg">
+                <text>没有原型</text>
+                <text class='fr'>原型设计</text>
+            </view>
+            <view class="resume2">
+                <text>没有原型，也就是没有业务流程图，是画不了UI图的，请先提供完整业务原型，或者付费设计原型，200+每页（不谈价）。</text>
+            </view>
+        </view>
+
+        <view class='cu-item text-red'>
+            <view class="resume text-lg">
+                <text>有原型</text>
+                <text class='fr'>沟通交流</text>
+            </view>
+            <view class="resume2">
+                <text>请提供表述完善的原型图，且需确定风格，主题颜色，配色要求，如难以表述，请提供相关案例图。</text>
+            </view>
+        </view>
+    </block>
+
+
+    <view class="cu-time">
+        <text class='icon-selection text-white text-lg bg-blue round padding-xs'></text>
+        <text class='text-xl margin-left'>需求评估</text>
+    </view>
+    <block>
+        <view class='cu-item text-red'>
+            <view class="resume text-lg">
+                <text>设计时长</text>
+                <text class='fr'>确认时长</text>
+            </view>
+            <view class="resume2">
+                <text>设计时间周期我们会根据需求给予相关的设计时间，例如，业务流程原型图设计完善，且页面数量在20个内，设计时间为7个工作日（参考值）。</text>
+            </view>
+        </view>
+
+        <view class='cu-item text-red'>
+            <view class="resume text-lg">
+                <text>已确认相关需求</text>
+                <text class='fr'>评估报价</text>
+            </view>
+            <view class="resume2">
+                <text>根据提供的UI设计需求，双方沟通讨论，并对UI设计需求的合理性和可行性分析，确定最终的UI设计需求，UI设计500+每页（不谈价）。</text>
+            </view>
+        </view>
+    </block>
+
+
+    <view class="cu-time">
+        <text class='icon-selection text-white text-lg bg-blue round padding-xs'></text>
+        <text class='text-xl margin-left'>支付定金</text>
+    </view>
+    <block>
+        <view class='cu-item text-red'>
+            <view class="resume text-lg">
+                <text>微信支付</text>
+                <text class='fr'>定金金额</text>
+            </view>
+            <view class="resume2">
+                <text>设计需求确认后，客户需支付最终报价费用的50%作为定金，并提供邮箱。</text>
+            </view>
+        </view>
+    </block>
+
+    <view class="cu-time">
+        <text class='icon-selection text-white text-lg bg-blue round padding-xs'></text>
+        <text class='text-xl margin-left'>UI设计</text>
+    </view>
+    <block>
+        <view class='cu-item text-red'>
+            <view class="resume text-lg">
+                <text>UI设计</text>
+                <text class='fr'>首页稿确认</text>
+            </view>
+            <view class="resume2">
+                <text>收到定金后，根据最终的设计需求，首先进行首页的效果图设计，且将首页UI图发送客户初步确认。</text>
+            </view>
+        </view>
+    </block>
+
+    <view class="cu-time">
+        <text class='icon-selection text-white text-lg bg-blue round padding-xs'></text>
+        <text class='text-xl margin-left'>终稿确认</text>
+    </view>
+    <block>
+        <view class='cu-item text-red'>
+            <view class="resume text-lg">
+                <text>设计稿交付</text>
+                <text class='fr'>终稿确认</text>
+            </view>
+            <view class="resume2">
+                <text>终稿提供PSD格式，以iphonex为例，客户的前端工程师可将设计稿进行切图。</text>
+            </view>
+        </view>
+    </block>
+
+<view class="cu-time">
+        <text class='icon-selection text-white text-lg bg-blue round padding-xs'></text>
+        <text class='text-xl margin-left'>支付余款</text>
+    </view>
+    <block>
+        <view class='cu-item text-red'>
+            <view class="resume text-lg">
+                <text>微信支付</text>
+                <text class='fr'>尾款金额</text>
+            </view>
+            <view class="resume2">
+                <text>支付剩余定制设计费用（尾款），设计稿文件将发送邮箱。</text>
+            </view>
+        </view>
+    </block>
+
+    <view class="cu-time">
+        <text class='icon-selection text-white text-lg bg-blue round padding-xs'></text>
+        <text class='text-xl margin-left'>注意事项</text>
+    </view>
+    <block>
+        <view class='cu-item text-red'>
+            <view class="resume text-lg">
+                <text>注意事项</text>
+                <text class='fr'>注意事项</text>
+            </view>
+            <view class="resume2">
+                <text>设计不支持额外的新增的功能的设计，且不支持风格的更改与重新设计，望须知。</text>
+            </view>
+        </view>
+    </block>
+
+</view>
+
+
+<view class="cu-bar bg-white tabbar shop shadow edit-fixed">
+    <!-- <button class="action text-gray" open-type='contact'>
+        <view class='icon-command text-purple'>
+        </view>
+        反馈
+    </button> -->
+    <button class="action text-gray text-shadow">
+        <view class='icon-community text-gray'>
+        </view>
+    </button>
+    <view class="action text-gray text-shadow">
+        <!-- <view class='icon-friendfavor text-pink'>
+            <view class='cu-tag badge'>99</view>
+        </view> -->
+        <text class="text-sm">541人已咨询</text>
+    </view>
+    <view class='bg-gradual-red submit margin-left-xl text-xl'>
+        <button class='button-no padding-top-xs' open-type="contact">
+        <text class='text-white'>业务咨询</text>
+        </button>
+    </view>
+</view>
+
+
+<view class='cu-tabbar-height' ></view>
